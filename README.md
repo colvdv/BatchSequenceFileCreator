@@ -1,5 +1,5 @@
 # BatchSequenceFileCreator v1.1
-A batch script to create a specified number of files with sequence naming. Created to assist with the creation of BatchFileRenamer (https://github.com/colvdv/BatchFileRenamer).
+A batch script to create a specified number of files with sequence naming.
 
 # Instructions
 Put the script into a .bat file, or download the latest release. Open the .bat file to run the script.
