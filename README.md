@@ -1,4 +1,4 @@
-# BatchSequenceFileCreator v1.1
+# COLVDV's BatchSequenceFileCreator
 A batch script to create a specified number of files with sequencial naming.
 
 # Instructions
@@ -8,6 +8,7 @@ Put the script into a .bat file, or download the latest [release](https://github
 Follow the prompts, reading the directions carefully. If you aren't getting your desired result, look at what the script is doing and adjust your inputs accordingly.
 
 ## How It Works
+### BatchSequenceFileCreator v1.1
 This script is a batch file designed to create a specified number of files with custom filenames based on user input. Here's a breakdown of what it does:
 
 1. Setup:
