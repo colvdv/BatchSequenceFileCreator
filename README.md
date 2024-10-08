@@ -7,6 +7,55 @@ Put the script into a .bat file, or download the latest [release](https://github
 ## Running The Script
 Follow the prompts, reading the directions carefully. If you aren't getting your desired result, look at what the script is doing and adjust your inputs accordingly.
 
+## How It Works
+This script is a batch file designed to create a specified number of files with custom filenames based on user input. Here's a breakdown of what it does:
+
+1. Setup:
+   - `@echo off`: Prevents commands from being shown in the command prompt.
+   - `setlocal enabledelayedexpansion`: Enables the use of delayed variable expansion, allowing the script to modify and use variables within loops.
+
+2. Getting User Input:
+   - The script prompts the user for several pieces of information:
+     - Number of files to create.
+     - Part 1 of the filename (static text).
+     - Part 2, which includes a static part and a placeholder for a sequential number (e.g., "S01E").
+     - Part 3 of the filename (static text).
+     - File extension (without the dot).
+
+3. Generating Filenames:
+   - The script constructs filenames in a loop based on the user inputs.
+   - It formats the sequential part with leading zeros (e.g., "01", "02", etc.).
+   - Each filename is constructed in the format: `Part1 + Part2 + FormattedSequentialNumber + Part3 + .fileExt`.
+
+4. Display Filenames:
+   - The script echoes the full paths of the files that would be created.
+
+5. Confirmation:
+   - It prompts the user to confirm whether they want to create the files.
+
+6. File Creation:
+   - If the user confirms (by entering "Y"), it creates empty files at the specified paths.
+   - If the user declines, it cancels the file creation process.
+
+7. Exit:
+   - Finally, it waits for the user to press any key before exiting.
+
+### Example:
+If the user inputs:
+- Number of files: "3"
+- Part 1: "This.Is.Part.1."
+- Part 2: "S01E"
+- Sequential Part Input: "the 'E' in 'S01E' as 'E'"
+- Part 3: ".This.Is.Part-3"
+- File extension: "txt"
+
+The script would create the following files:
+- `This.Is.Part.1.S01E01.This.Is.Part-3.txt`
+- `This.Is.Part.1.S01E02.This.Is.Part-3.txt`
+- `This.Is.Part.1.S01E03.This.Is.Part-3.txt`
+
+These files would be created in the directory where the script is located.
+
 ## The Script
 ```
 @echo off
