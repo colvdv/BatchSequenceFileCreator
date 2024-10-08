@@ -2,7 +2,7 @@
 A batch script to create a specified number of files with sequencial naming.
 
 # Instructions
-Put the script into a .bat file, or download the latest release. Open the .bat file to run the script.
+Put the script into a .bat file, or download the latest [release](https://github.com/colvdv/BatchSequenceFileCreator/releases). Open the .bat file to run the script.
 
 ## Running The Script
 Follow the prompts, reading the directions carefully. If you aren't getting your desired result, look at what the script is doing and adjust your inputs accordingly.
